@@ -1,0 +1,41 @@
+/* .header__menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  display: none;
+}
+
+.menu-btn__burger {
+  width: 5rem;
+  height: 0.6rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+  transform: translateY(-1.6rem);
+}
+
+.menu-btn__burger::after {
+  transform: translateY(1.6rem);
+} */

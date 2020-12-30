@@ -1,0 +1,396 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* .title-global {
+    font-size: 2.5rem;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: center;
+  } */
+
+  /* HEADER */
+  .header__nav {
+    display: none;
+  }
+
+  /* BURGER */
+  /* burger Logo */
+  .nav__links-wrapper {
+    position: relative;
+  }
+
+  .nav__links-logo {
+    position: absolute;
+
+    height: 6rem;
+    width: 18.6rem;
+  }
+
+  .nav__links-logo-title {
+  }
+
+  .nav__links-logo-subtitle {
+  }
+
+  .header__menu-btn {
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-right: 4.3rem;
+    padding: 0;
+    background: transparent;
+    z-index: 4;
+  }
+
+  .menu-btn__burger {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    width: 3rem;
+    height: 0.2rem;
+    background: var(--color-primary);
+    box-shadow: 0 0.2rem 0.5rem rgb(241, 205, 179, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: "";
+    top: 0 rem;
+    position: absolute;
+    width: 3rem;
+    height: 0.2rem;
+    background: var(--color-primary);
+    box-shadow: 0 0.2rem 0.5rem rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-btn__burger::before {
+    transform: translateY(-1rem);
+  }
+
+  .menu-btn__burger::after {
+    transform: translateY(1rem);
+  }
+
+  /* Animation Burger */
+  .menu-btn_open {
+    transform: rotate(90deg);
+  }
+
+  /* NEW SIDEBAR */
+  .sidebar-modal {
+    position: relative;
+  }
+
+  .sidebar-modal-main_visible {
+    display: block;
+  }
+
+  .sidebar-modal__logo {
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+  }
+
+  .sidebar-modal__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(41, 41, 41, 0.6);
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .sidebar-modal__window {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--color-dark-3xl);
+    /* background-color: #fff; */
+    width: 32rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar-modal__overlay_visible {
+    opacity: 1;
+    visibility: visible;
+    transition: right ease 3s;
+  }
+
+  .sidebar-modal_visible {
+    display: flex;
+    transition: right ease 3s;
+  }
+
+  /* END NEW SIDEBAR */
+  /* MAIN */
+  .start__title,
+  .about__title,
+  .pets__title,
+  .help__title,
+  .donation__title {
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
+
+  .start__title {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .about__title {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .donation__title {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .start__inner {
+    padding-bottom: 10.6rem;
+  }
+
+  .start__text {
+    text-align: center;
+  }
+
+  .start__wrapper-image img {
+    max-width: 26rem;
+  }
+
+  /* ABOUT */
+
+  .about__content-right {
+    padding-top: 4rem;
+  }
+
+  .about__title {
+    flex-direction: column;
+  }
+
+  .about__text {
+    text-align: justify;
+    /* padding-left: 0.9rem;
+    padding-right: 0.9rem; */
+    max-width: 27rem;
+    padding-top: 2.4rem;
+  }
+
+  .about__content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4.2rem;
+  }
+
+  .about__content-inner {
+    font-size: none;
+  }
+
+  .about__img {
+    max-width: 26rem;
+    padding: 3.9rem 0 4rem;
+  }
+
+  /* PETS */
+  .pets__inner {
+    padding-top: 4.3rem;
+    padding-bottom: 4.3rem;
+  }
+
+  .pets__slider {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pets__row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pets__item {
+    order: 1;
+    margin-top: 4.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .pets__item2 {
+    display: none;
+  }
+
+  .pets__item-arrow-left {
+    order: 2;
+    padding-right: 4rem;
+  }
+
+  .pets__item-arrow-right {
+    order: 3;
+    padding-left: 4rem;
+  }
+
+  .pets__button-big {
+    margin-top: 4.2rem;
+  }
+
+  /* HELP */
+
+  .help__content {
+    padding-top: 4.3rem;
+    padding-bottom: 1rem;
+  }
+
+  .help__title {
+    max-width: 23rem;
+  }
+
+  .help__row {
+    padding-top: 4.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .help__item {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    flex-basis: 13rem;
+    height: 8.7rem;
+    padding: 0;
+  }
+
+  .help__img {
+    width: 5rem;
+    height: 5rem;
+    padding-bottom: 2rem;
+  }
+
+  .help__text {
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    padding: 0;
+  }
+
+  .help__item10 {
+    display: block;
+  }
+
+  /* DONATION */
+  .donation__content-right {
+    padding-top: 4.4rem;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .donation__name-bank {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 160%;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  .donation__card {
+    max-width: 28.1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .donation__text {
+    text-align: justify;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .donation__credit-card {
+    font-size: 1.5rem;
+  }
+
+  .donation__content-img {
+    max-width: 26rem;
+    padding-top: 1.3rem;
+    padding-bottom: 4.1rem;
+  }
+
+  /* FOOTER */
+
+  .footer__item1 {
+    padding-bottom: 4rem;
+    /* width: 100%; */
+    align-items: center;
+  }
+
+  .footer__inner {
+    padding-top: 2.9rem;
+  }
+
+  .footer__title {
+    padding-top: 0;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .footer__info1 {
+  }
+
+  .footer__item2 {
+    padding-bottom: 4rem;
+    align-items: center;
+  }
+
+  .footer__title2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .footer__info2 {
+    padding-top: 4rem;
+    width: 100%;
+  }
+
+
+  .footer__img {
+    max-width: 26rem;
+  }
+
+  .footer__column {
+  }
+
+  .footer__text-lnd {
+    /* padding: 0; */
+  }
+}

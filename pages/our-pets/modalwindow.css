@@ -1,0 +1,238 @@
+.modals__overlay-windows {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.modals__windows {
+  position: relative;
+  width: 90rem;
+  min-height: 50rem;
+  border-radius: 0.9rem;
+  background-color: var(--color-light-s);
+}
+
+.modals__windows-overlay--visible {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+
+.modals__windows--visible {
+  display: block;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.2s ease-in;
+}
+
+.modal-window {
+  position: relative;
+  width: 90rem;
+  height: 50rem;
+  border-radius: 0.9rem;
+  background-color: var(--color-light-s);
+  margin: 0 auto;
+  transform: translateY(-20rem);
+  transition: transform 0.2s ease-in;
+}
+
+.modal-window__btn-close {
+  position: absolute;
+  width: 5.2rem;
+  height: 5.2rem;
+  top: -5.2rem;
+  right: -4.2rem;
+  box-shadow: 0px 0px 0px 0.2rem var(--color-primary) inset;
+  border-radius: 10rem;
+  background-image: url(../../assets/icons/vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-window__btn-close:hover {
+  background-color: var(--color-primary);
+  transition: 0.2s ease-in;
+}
+
+.modal-window__img {
+  width: 50rem;
+  border-radius: 0.9rem 0 0 0.9rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.content__right {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
+  padding-right: 2rem;
+}
+
+.content__name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  letter-spacing: 0.06em;
+  color: #000000;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+.content__subname {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  /* identical to box height, or 23px */
+  letter-spacing: 0.06em;
+  padding-bottom: 4rem;
+}
+
+.content__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  /* or 17px */
+  letter-spacing: 0.06em;
+  padding-bottom: 4rem;
+}
+
+.content__info {
+  padding-left: 0;
+  list-style: none;
+  list-style-position: inside;
+}
+
+.content__item {
+  font-family: Georgia;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  /* identical to box height, or 17px */
+  letter-spacing: 0.06em;
+  padding-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+
+.content__info .content__item::before {
+  content: "\2022";
+  color: var(--color-primary);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+@media (max-width: 1279px) {
+  .modals__windows {
+    position: relative;
+    width: 63rem;
+    min-height: 35rem;
+    border-radius: 0.9rem;
+    background-color: var(--color-light-s);
+  }
+
+  .modal-window__img {
+    width: 35rem;
+  }
+
+  .content__right {
+    padding: 1rem 0.9rem 0 1.1rem;
+  }
+
+  .content__name {
+    padding-top: 0;
+  }
+
+  .content__subname {
+    padding-bottom: 2rem;
+  }
+
+  .content__text {
+    padding-bottom: 2rem;
+  }
+
+  .content__info {
+    margin: 0;
+    padding: 0;
+  }
+
+  .content__item {
+    word-wrap: break-word;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .modals__windows {
+    width: 24rem;
+    min-height: 34.1rem;
+    padding: 2rem 1rem 1.5rem 1rem;
+  }
+
+  .modal-window__btn-close {
+    top: -5.2rem;
+    right: -3rem;
+  }
+
+  .modal-window__img {
+    display: none;
+  }
+
+  .content__right {
+    width: 100%;
+    padding: 0;
+  }
+
+  .content__name {
+    padding-top: 0;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.5rem;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+
+  .content__subname {
+    padding-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .content__text {
+    text-align: justify;
+    padding-bottom: 2.4rem;
+  }
+
+  .content__info {
+    margin: 0;
+    padding: 0;
+  }
+}

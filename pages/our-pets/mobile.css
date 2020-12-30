@@ -1,0 +1,207 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* HEADER */
+  .header__nav {
+    display: none;
+  }
+
+  /* BURGER */
+  /* burger Logo */
+  .nav__links-wrapper {
+    position: relative;
+  }
+
+  .nav__links-logo {
+    position: absolute;
+
+    height: 6rem;
+    width: 18.6rem;
+  }
+
+  .header__menu-btn {
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-right: 4.3rem;
+    padding: 0;
+    background: transparent;
+    z-index: 4;
+  }
+
+  .menu-btn__burger {
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    width: 3rem;
+    height: 0.2rem;
+    background: var(--color-primary);
+    box-shadow: 0 0.2rem 0.5rem rgb(241, 205, 179, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: "";
+    top: 0 rem;
+    position: absolute;
+    width: 3rem;
+    height: 0.2rem;
+    background: var(--color-primary);
+    box-shadow: 0 0.2rem 0.5rem rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-btn__burger::before {
+    transform: translateY(-1rem);
+  }
+
+  .menu-btn__burger::after {
+    transform: translateY(1rem);
+  }
+
+  /* Animation Burger */
+  .menu-btn_open {
+    transform: rotate(90deg);
+  }
+
+  /* NEW SIDEBAR */
+  .sidebar-modal {
+    position: relative;
+  }
+
+  .sidebar-modal-main_visible {
+    display: block;
+  }
+
+  .sidebar-modal__logo {
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+  }
+
+  .sidebar-modal__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(41, 41, 41, 0.6);
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .sidebar-modal__window {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--color-dark-3xl);
+    width: 32rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar-modal__overlay_visible {
+    opacity: 1;
+    visibility: visible;
+    transition: right ease 3s;
+  }
+
+  .sidebar-modal_visible {
+    display: flex;
+    transition: right ease 3s;
+  }
+  /* Our Pets */
+  .our-pets__content {
+    padding-top: 4.2rem;
+    padding-bottom: 4.2rem;
+  }
+
+  .our-pets__title {
+    padding-top: 0;
+    font-size: 2.5rem;
+  }
+  .our-pets__row {
+    padding-top: 1.2rem;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+  }
+
+  #item__sophia {
+    display: none;
+  }
+
+  #item__timmy {
+    display: none;
+  }
+
+  #item__charly {
+    display: none;
+  }
+
+  .pagination {
+    padding-top: 2.8rem;
+  }
+
+  .pagination__item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .pagination__item:nth-of-type(1n + 2) {
+    margin-left: 1rem;
+  }
+
+  /* FOOTER */
+
+  .footer__item1 {
+    padding-bottom: 4rem;
+    align-items: center;
+  }
+
+  .footer__inner {
+    padding-top: 2.9rem;
+  }
+
+  .footer__title {
+    padding-top: 0;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .footer__item2 {
+    padding-bottom: 4rem;
+    align-items: center;
+  }
+
+  .footer__title2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .footer__info2 {
+    padding-top: 4rem;
+    width: 100%;
+  }
+
+  .footer__img {
+    max-width: 26rem;
+  }
+}
