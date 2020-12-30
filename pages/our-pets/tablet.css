@@ -1,0 +1,61 @@
+@media (max-width: 1279px) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  /* HEADER */
+  .header {
+    position: fixed;
+  }
+
+  /* PETS */
+  .our-pets__content {
+    padding-bottom: 7.6rem;
+  }
+
+  .our-pets__title {
+    padding-bottom: 1.5rem;
+  }
+
+  .our-pets__row {
+    padding-top: 0;
+    padding-left: 6.4rem;
+    padding-right: 6.4rem;
+  }
+
+  #item__scarlett {
+    display: none;
+  }
+
+  #item__freddie {
+    display: none;
+  }
+
+  .pagination {
+    padding-top: 2.5rem;
+  }
+
+   /* FOOTER */
+  .footer__inner {
+    padding-top: 3rem;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer__item1 {
+    padding-top: 0;
+    padding-bottom: 6.5rem;
+  }
+
+  .footer__item2 {
+    padding-top: 0;
+    padding-bottom: 6.5rem;
+  }
+
+}
