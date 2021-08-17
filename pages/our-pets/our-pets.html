@@ -21,6 +21,7 @@
       href="mobile.css"
       media="(min-width: 320px) and (max-width: 767px)"
     />
+    <link rel="stylesheet" href="../main/modalwindow.css">
   </head>
   <body id="up">
     <header id="header" class="header">
@@ -104,7 +105,7 @@
                     alt="cat-katrine"
                   />
                   <h3 class="our-pets__name">Katrine</h3>
-                  <button class="btn-modal-window our-pets__button" data-path="form-popup">Learn more</button>
+                  <button id="katrine" class="btn-modal-window our-pets__button" data-path="form-popup">Learn more</button>
                 </div>
                 <!--  -->
                 <div  id="item__jennifer" class="our-pets__item">
@@ -114,57 +115,57 @@
                     alt="dog-jennifer"
                   />
                   <h3 class="our-pets__name">Jennifer</h3>
-                  <button class="btn-modal-window our-pets__button" data-path="form-popup">Learn more</button>
+                  <button id="jennifer" class="btn-modal-window our-pets__button" data-path="form-popup">Learn more</button>
                 </div>
                 <!--  -->
                 <div  id="item__woody" class="our-pets__item">
                   <img
                     class="our-pets__img"
                     src="../../assets/our-pets/woody.png"
-                    alt="dog-jennifer"
+                    alt="dog-woody"
                   />
                   <h3 class="our-pets__name">Woody</h3>
-                  <button class="btn-modal-window our-pets__button" data-path="form-popup">Learn more</button>
+                  <button id="woody" class="btn-modal-window our-pets__button" data-path="form-popup">Learn more</button>
                 </div>
                 <!--  -->
                 <div id="item__sophia" class="our-pets__item">
                   <img
                     class="our-pets__img"
                     src="../../assets/our-pets/sophia.png"
-                    alt="dog-woody"
+                    alt="cat-sophia"
                   />
                   <h3 class="our-pets__name">Sophia</h3>
-                  <button class="btn-modal-window our-pets__button" data-path="form-popup">Learn more</button>
+                  <button id="sophia" class="btn-modal-window our-pets__button" data-path="form-popup">Learn more</button>
                 </div>
                 <!--  -->
                 <div id="item__timmy" class="our-pets__item">
                   <img
                     class="our-pets__img"
                     src="../../assets/our-pets/timmy.png"
-                    alt="dog-woody"
+                    alt="dog-timmy"
                   />
                   <h3 class="our-pets__name">Timmy</h3>
-                  <button class="btn-modal-window our-pets__button" data-path="form-popup">Learn more</button>
+                  <button id="timmy" class="btn-modal-window our-pets__button" data-path="form-popup">Learn more</button>
                 </div>
                 <!--  -->
                 <div  id="item__charly" class="our-pets__item">
                   <img
                     class="our-pets__img"
                     src="../../assets/our-pets/charly.png"
-                    alt="dog-woody"
+                    alt="dog-charly"
                   />
                   <h3 class="our-pets__name">Charly</h3>
-                  <button class="btn-modal-window our-pets__button" data-path="form-popup">Learn more</button>
+                  <button id="charly" class="btn-modal-window our-pets__button" data-path="form-popup">Learn more</button>
                 </div>
                 <!--  -->
                 <div id="item__scarlett" class="our-pets__item">
                   <img
                     class="our-pets__img"
-                    src="../../assets/our-pets/scarlet.png"
-                    alt="dog-woody"
+                    src="../../assets/our-pets/scarlett.png"
+                    alt="dog-scarlett"
                   />
                   <h3 class="our-pets__name">Scarlett</h3>
-                  <button class="btn-modal-window our-pets__button" data-path="form-popup">Learn more</button>
+                  <button id="scarlett" class="btn-modal-window our-pets__button" data-path="form-popup">Learn more</button>
                 </div>
                 <!--  -->
                 <div id="item__freddie" class="our-pets__item">
@@ -174,7 +175,7 @@
                     alt="dog-woody"
                   />
                   <h3 class="our-pets__name">Freddie</h3>
-                  <button class="btn-modal-window our-pets__button" data-path="form-popup">Learn more</button>
+                  <button id="freddie" class="btn-modal-window our-pets__button" data-path="form-popup">Learn more</button>
                 </div>
               </div>
             </div>
@@ -200,28 +201,28 @@
           </div>
         </div>
       </section>
-            <!-- MODAL WINDOW -->
-            <div class="modals">
-              <div class="modals__overlay-windows">
-                <div class="modals__windows modal--1 content" data-target="form-popup">
-                  
-                  <div class="modal-window__btn-close"></div>
-                  
-                  <div class="modal-window__image"><img class="modal-window__img" src="../../assets/our-pets/katrine.png" alt="pet"></div>
-                  <div class="content__right"><div class="content__name">Katrine</div>
-                  <div class="content__subname">Cat - British Shorthair</div>
-                  <div class="content__text">Katrine is a beautiful girl. She is as soft as the finest velvet with a thick lush fur. Will love you until the last breath she takes as long as you are the one. She is picky about her affection. She loves cuddles and to stretch into your hands for a deeper relaxations.</div>
-                  <ul class="content__info">
-                    <li class="content__item"><strong>Age:</strong> 6 months</li>
-                    <li class="content__item"><strong>Inoculations:</strong> panleukopenia</li>
-                    <li class="content__item"><strong>Diseases:</strong> none</li>
-                    <li class="content__item"><strong>Parasites:</strong> none</li>
-                  </ul>
-                  </div>
-                  
-                </div>
-            </div> 
-            <!-- END MODAL WINDOW -->
+                 <!-- MODAL WINDOW -->
+       <div class="modals">
+        <div class="modals__overlay-windows">
+          <div class="modals__windows modal--1 content" data-target="form-popup">
+            
+            <div class="modal-window__btn-close"></div>
+            
+            <div class="modal-window__image"><img class="modal-window__img" src="../../assets/our-pets/katrine.png" alt="pet"></div>
+            <div class="content__right"><div class="content__name">Katrine</div>
+            <div class="content__subname"><span class="content__type"></span> - <span class="content__breed"></span></div>
+            <div class="content__text">Katrine is a beautiful girl. She is as soft as the finest velvet with a thick lush fur. Will love you until the last breath she takes as long as you are the one. She is picky about her affection. She loves cuddles and to stretch into your hands for a deeper relaxations.</div>
+            <ul class="content__info">
+              <li class="content__item"><strong>Age: </strong> <span class="info__age">6 months</span></li>
+              <li class="content__item"><strong>Inoculations: </strong> <span class="info__inoculations">panleukopenia</span></li>
+              <li class="content__item"><strong>Diseases: </strong><span class="info__diseases">none</span></li>
+              <li class="content__item"><strong>Parasites: </strong><span class="info__parasites"></span>none</li>
+            </ul>
+            </div>
+            
+          </div>
+      </div> 
+      <!-- END MODAL WINDOW -->
     </main>
     <!-- END MAIN -->
     <!-- Footer -->
@@ -296,6 +297,6 @@
     </footer>
     <script src="main.js"></script>
     <script src="sidebar.js"></script>
-    <script src="modalwindow.js"></script>
+    <script src="../main/modalwindow.js"></script>
   </body>
 </html>
