@@ -223,25 +223,35 @@
   }
 
   .pets__slider {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin-top: 4.2rem;
+    margin-bottom: 0;
   }
 
   .pets__row {
-    width: 100%;
+    width: 27rem;
+    height: 50.7rem;
     display: flex;
     justify-content: center;
   }
 
   .pets__item {
     order: 1;
-    margin-top: 4.3rem;
-    margin-bottom: 2rem;
   }
 
   .pets__item2 {
     display: none;
+  }
+
+  .pets__arrow-left {
+    top: 100%;
+    left: 43px;
+    transform: translate(0, -100%);
+  }
+
+  .pets__arrow-right {
+    top: 100%;
+    right: 43px;
+    transform: translate(0, -100%);
   }
 
   .pets__item-arrow-left {
@@ -381,7 +391,6 @@
     padding-top: 4rem;
     width: 100%;
   }
-
 
   .footer__img {
     max-width: 26rem;

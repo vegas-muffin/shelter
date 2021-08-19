@@ -84,16 +84,15 @@
   /* PETS */
   .pets__slider {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
   }
 
   .pets__row {
-    padding-left: 0;
-    padding-right: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 58rem;
     width: 100%;
   }
 
