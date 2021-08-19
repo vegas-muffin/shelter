@@ -1,7 +1,7 @@
 const animals = [
   {
     name: "Jennifer",
-    img: "../../assets/our-pets/jennifer.png",
+    img: "../../assets/images/jennifer.png",
     type: "Dog",
     breed: "Labrador",
     description:
@@ -13,7 +13,7 @@ const animals = [
   },
   {
     name: "Sophia",
-    img: "../../assets/our-pets/sophia.png",
+    img: "../../assets/images/sophia.png",
     type: "Dog",
     breed: "Shih tzu",
     description:
@@ -25,7 +25,7 @@ const animals = [
   },
   {
     name: "Woody",
-    img: "../../assets/our-pets/woody.png",
+    img: "../../assets/images/woody.png",
     type: "Dog",
     breed: "Golden Retriever",
     description:
@@ -37,7 +37,7 @@ const animals = [
   },
   {
     name: "Scarlett",
-    img: "../../assets/our-pets/scarlett.png",
+    img: "../../assets/images/scarlett.png",
     type: "Dog",
     breed: "Jack Russell Terrier",
     description:
@@ -49,7 +49,7 @@ const animals = [
   },
   {
     name: "Katrine",
-    img: "../../assets/our-pets/katrine.png",
+    img: "../../assets/images/katrine.png",
     type: "Cat",
     breed: "British Shorthair",
     description:
@@ -61,7 +61,7 @@ const animals = [
   },
   {
     name: "Timmy",
-    img: "../../assets/our-pets/timmy.png",
+    img: "../../assets/images/timmy.png",
     type: "Cat",
     breed: "British Shorthair",
     description:
@@ -73,7 +73,7 @@ const animals = [
   },
   {
     name: "Freddie",
-    img: "../../assets/our-pets/freddie.png",
+    img: "../../assets/images/freddie.png",
     type: "Cat",
     breed: "British Shorthair",
     description:
@@ -85,7 +85,7 @@ const animals = [
   },
   {
     name: "Charly",
-    img: "../../assets/our-pets/charly.png",
+    img: "../../assets/images/charly.png",
     type: "Dog",
     breed: "Jack Russell Terrier",
     description:
@@ -96,76 +96,3 @@ const animals = [
     parasites: ["lice", "fleas"],
   },
 ];
-
-const btnsWindows = document.querySelectorAll(".btn-modal-window");
-const modalOverlayWindow = document.querySelector(".modals__overlay-windows");
-const modalsWindows = document.querySelectorAll(".modals-windows");
-const btnClose = document.querySelector(".modal-window__btn-close");
-
-const animalImg = document.querySelector(".modal-window__img");
-const animalName = document.querySelector(".content__name");
-const animalType = document.querySelector(".content__type");
-const animalBreed = document.querySelector(".content__breed");
-const animalText = document.querySelector(".content__text");
-const animalAge = document.querySelector(".info__age");
-const animalInoculations = document.querySelector(".info__inoculations");
-const animalDiseases = document.querySelector(".info__diseases");
-const animalParasites = document.querySelector(".info__parasites");
-
-// open modal window
-btnsWindows.forEach((el) => {
-  el.addEventListener("click", (e) => {
-    let path = e.currentTarget.getAttribute("data-path");
-    animals.forEach((animal) => {
-      if (e.srcElement.id === animal.name.toLowerCase()) {
-        animalImg.src = animal.img;
-        animalImg.alt = `${animal.name}-${animal.type}`;
-        animalName.textContent = animal.name;
-        animalType.textContent = animal.type;
-        animalBreed.textContent = animal.breed;
-        animalText.textContent = animal.description;
-        animalAge.textContent = animal.age;
-        animalInoculations.textContent = animal.inoculations;
-        animalDiseases.textContent = animal.diseases;
-        animalParasites.textContent = animal.parasites;
-      }
-    });
-    modalsWindows.forEach((el) => {
-      el.classList.remove("modals__windows--visible");
-    });
-
-    document
-      .querySelector(`[data-target="${path}"]`)
-      .classList.add("modals__windows--visible");
-    modalOverlayWindow.classList.add("modals__windows-overlay--visible");
-  });
-});
-
-// close modal window them click on the grey area
-modalOverlayWindow.addEventListener("click", (e) => {
-  if (e.target == modalOverlayWindow) {
-    modalOverlayWindow.classList.remove("modals__windows-overlay--visible");
-    modalsWindows.forEach((el) => {
-      el.classList.remove("modals__windows--visible");
-    });
-  }
-});
-
-// style close button then mouseover on the modal window
-modalOverlayWindow.addEventListener("mouseover", (e) => {
-  if (e.target == modalOverlayWindow) {
-    btnClose.classList.add("modal-window__over");
-  } else {
-    btnClose.classList.remove("modal-window__over");
-  }
-});
-
-// close modal window
-btnClose.addEventListener("click", (e) => {
-  if (e.target == btnClose) {
-    modalOverlayWindow.classList.remove("modals__windows-overlay--visible");
-    modalsWindows.forEach((el) => {
-      el.classList.remove("modals__windows--visible");
-    });
-  }
-});

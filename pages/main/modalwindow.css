@@ -66,11 +66,12 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  transition: background-color 0.2s ease-in;
 }
 
+.modal-window__over,
 .modal-window__btn-close:hover {
   background-color: var(--color-primary);
-  transition: 0.2s ease-in;
 }
 
 .modal-window__img {

@@ -21,6 +21,7 @@
       href="mobile.css"
       media="(min-width: 320px) and (max-width: 767px)"
     />
+    <link rel="stylesheet" href="slick.css">
   </head>
   <body id="up">
     <header id="header" class="header">
@@ -130,9 +131,6 @@
                 alt="image-cat-n-dog"
               />
               <div class="about__content-right">
-                <!-- <div class="about__title title-global">
-                  <span>About the shelter “Cozy House”</span>
-                </div> -->
                 <h2 class="about__title title-global">About the shelter “Cozy House”</h2>
                 <div class="about__text">
                   Currently we have 121 dogs and 342 cats on our hands and
@@ -155,57 +153,115 @@
       </section>
       <!-- pets -->
       <section id="pets" class="pets">
-
         <div class="container">
           <div class="pets__inner">
             <div class="pets__title title-global">
               <span>Our friends who</span>
               <span>are looking for a house</span>
             </div>
-            <!-- <h2 class="pets__title title-global">Our friends who are looking for a house</h2> -->
-            <div class="pets__slider">
-              <div class="pets__item-arrow pets__item-arrow-left">
-                <button class="pets__arrow-left"></button>
-              </div>
-              <div class="pets__row">
-              <div class="pets__item">
-                <img
-                  class="pets__img"
-                  src="../../assets/our-pets/katrine.png"
-                  alt="cat-katrine"
-                />
-                <div class="pets__name">Katrine</div>
-                <button class="btn-modal-window pets__button btn" data-path="form-popup">Learn more</button>
-              </div>
-              <div class="pets__item pets__item2">
-                <img
-                  class="pets__img"
-                  src="../../assets/our-pets/jennifer.png"
-                  alt="dog-jennifer"
-                />
-                <div class="pets__name">Jennifer</div>
-                <button class="btn-modal-window pets__button btn" data-path="form-popup">Learn more</button>
-              </div>
-              <div class="pets__item pets__item3">
-                <img
-                  class="pets__img"
-                  src="../../assets/our-pets/woody.png"
-                  alt="dog-jennifer"
-                />
-                <div class="pets__name">Woody</div>
-                <button class="btn-modal-window pets__button btn" data-path="form-popup">Learn more</button>
-              </div>
-              </div>
-              <div class="pets__item-arrow pets__item-arrow-right">
-                <button class="pets__arrow-right"></button>
-              </div>
-            </div>
+      <div class="pets__slider">      
+        <!-- test Slider  section -->
+        <div class="pets__row slider multiple-items">
+        <div class="pets__item-wrapper">
+          <div class="pets__item">
+          <img
+            class="pets__img"
+            src="../../assets/our-pets/katrine.png"
+            alt="cat-katrine"
+          />
+          <div class="pets__name">Katrine</div>
+          <button id="katrine" class="btn-modal-window pets__button btn" data-path="form-popup">Learn more</button>
+        </div>
+      </div>
+        <div  class="pets__item-wrapper">
+          <div class="pets__item pets__item2">
+          <img
+            class="pets__img"
+            src="../../assets/our-pets/jennifer.png"
+            alt="dog-jennifer"
+          />
+          <div class="pets__name">Jennifer</div>
+          <button id="jennifer" class="btn-modal-window pets__button btn" data-path="form-popup">Learn more</button>
+        </div>
+      </div>
+        <div  class="pets__item-wrapper">
+          <div class="pets__item pets__item3">
+          <img
+            class="pets__img"
+            src="../../assets/our-pets/woody.png"
+            alt="dog-woody"
+          />
+          <div class="pets__name">Woody</div>
+          <button id="woody" class="btn-modal-window pets__button btn" data-path="form-popup">Learn more</button>
+        </div>
+      </div>
+        <div  class="pets__item-wrapper">
+          <div class="pets__item">
+            <img
+              class="pets__img"
+              src="../../assets/our-pets/sophia.png"
+              alt="dog-sophia"
+            />
+            <div class="pets__name">Sophia</div>
+            <button id="sophia" class="btn-modal-window pets__button btn" data-path="form-popup">Learn more</button>
+          </div>
+        </div>
+        <div class="pets__item-wrapper">
+          <div class="pets__item">
+          <img
+            class="pets__img"
+            src="../../assets/our-pets/timmy.png"
+            alt="cat-timmy"
+          />
+          <div class="pets__name">Timmy</div>
+          <button id="timmy" class="btn-modal-window pets__button btn" data-path="form-popup">Learn more</button>
+        </div>
+      </div>
+        <div class="pets__item-wrapper">
+          <div class="pets__item">
+            <img
+              class="pets__img"
+              src="../../assets/our-pets/charly.png"
+              alt="dog-charly"
+            />
+            <div class="pets__name">Charly</div>
+            <button id="charly" class="btn-modal-window pets__button btn" data-path="form-popup">Learn more</button>
+          </div>
+        </div>
+        <div class="pets__item-wrapper">
+          <div class="pets__item">
+            <img
+              class="pets__img"
+              src="../../assets/our-pets/scarlett.png"
+              alt="dog-scarlett"
+            />
+            <div class="pets__name">Scarlett</div>
+            <button id="scarlett" class="btn-modal-window pets__button btn" data-path="form-popup">Learn more</button>
+          </div>
+        </div>
+        <div class="pets__item-wrapper">
+          <div class="pets__item">
+            <img
+              class="pets__img"
+              src="../../assets/our-pets/freddie.png"
+              alt="cat-freddie"
+            />
+            <div class="pets__name">Freddie</div>
+            <button id="freddie" class="btn-modal-window pets__button btn" data-path="form-popup">Learn more</button>
+          </div>
+        </div>
+    </div>
+    <!-- END test Slider  -->
+      </div>
+      
+
             <div class="pets__wrapper-button-big">
               <button id="pets__button-big" class="pets__button-big">Get to know the rest</button>
             </div>
           </div>
         </div>
       </section>
+
       <!-- Help -->
       <section id="help" class="help">
         <div class="container">
@@ -353,13 +409,13 @@
             
             <div class="modal-window__image"><img class="modal-window__img" src="../../assets/our-pets/katrine.png" alt="pet"></div>
             <div class="content__right"><div class="content__name">Katrine</div>
-            <div class="content__subname">Cat - British Shorthair</div>
+            <div class="content__subname"><span class="content__type"></span> - <span class="content__breed"></span></div>
             <div class="content__text">Katrine is a beautiful girl. She is as soft as the finest velvet with a thick lush fur. Will love you until the last breath she takes as long as you are the one. She is picky about her affection. She loves cuddles and to stretch into your hands for a deeper relaxations.</div>
             <ul class="content__info">
-              <li class="content__item"><strong>Age:</strong> 6 months</li>
-              <li class="content__item"><strong>Inoculations:</strong> panleukopenia</li>
-              <li class="content__item"><strong>Diseases:</strong> none</li>
-              <li class="content__item"><strong>Parasites:</strong> none</li>
+              <li class="content__item"><strong>Age: </strong> <span class="info__age">6 months</span></li>
+              <li class="content__item"><strong>Inoculations: </strong> <span class="info__inoculations">panleukopenia</span></li>
+              <li class="content__item"><strong>Diseases: </strong><span class="info__diseases">none</span></li>
+              <li class="content__item"><strong>Parasites: </strong><span class="info__parasites"></span>none</li>
             </ul>
             </div>
             
@@ -433,12 +489,17 @@
                 />
               </div>
             </div>
+            
           </div>
         </div>
       </div>
-    </footer>
+    </footer>    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="main.js"></script>
     <script src="sidebar.js"></script>
     <script src="modalwindow.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
   </body>
 </html>
